@@ -1,1 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IHA® - Inteligencia Humana Aplicada por el Ing. Gabriel Frávega (UNC)</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFQZ46YZD4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZFQZ46YZD4');
+  </script>
+
+  <!-- Metadatos SEO -->
+  <meta name="description" content="IHA® - Inteligencia Humana Aplicada. El nuevo escalón de la Tecnología y la IA.  Proyecto científico y tecnológico del Ing. Gabriel Frávega (UNC). Innovación biomolecular, inteligencia humana aplicada y frontera del conocimiento.">
+  <meta name="keywords" content="IHA®, Inteligencia Humana Aplicada, Gabriel Frávega, biomolecular, IHA3, tecnología, ciencia, ingeniería, frontera del conocimiento, proyecto IHA, IHA Argentina, La Nueva "IA": IHA®+ECOSISTEMAS TECNOLÓGICOS+MARCOS REFERENCIAS+TFC® - 2027>
+  <meta name="author" content="Ing. Gabriel Frávega®">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://ing-gabriel-fravega.github.io/IHA/">
+
+  <!-- Open Graph (SEO extendido para Google y redes sociales) -->
+  <meta property="og:title" content="IHA® - Inteligencia Humana Aplicada por el Ing. Gabriel Frávega (UNC)">
+ 
+  <meta property="og:description" content="Proyecto del Ing. Gabriel Frávega (UNC) sobre Inteligencia Humana Aplicada (IHA) e innovación biomolecular.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ing-gabriel-fravega.github.io/IHA/">
+  <meta property="og:image" content="https://ing-gabriel-fravega.github.io/IHA/imagen_portada.jpg">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #e5e5e5;
+      color: #111;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    
+.tech-image {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow:
+        0 0 40px rgba(0, 242, 255, 0.6),
+        0 0 80px rgba(0, 242, 255, 0.4),
+        0 0 120px rgba(0, 242, 255, 0.2);
+      transition: all 0.5s ease-in-out;
+      filter: drop-shadow(0 0 30px #00f2ff);
+      display: block;
+      margin: 0 auto;
+    }
+
+    .tech-image:hover {
+      transform: scale(1.07);
+      filter: drop-shadow(0 0 60px #00f2ff) brightness(1.2);
+      box-shadow:
+        0 0 60px rgba(0, 255, 255, 0.8),
+        0 0 120px rgba(0, 255, 255, 0.6),
+        0 0 180px rgba(0, 255, 255, 0.4);
+    }
+
+
+
+.manifiesto-card {
+    background: #0b1220;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.manifiesto-card h2 {
+    color: #ffffff;
+}
+
+.manifiesto-card a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+    
+    header {
+      text-align: center;
+      padding: 20px 10px 10px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0.2em 0;
+    }
+
+    /* Contenedor en una sola columna */
+    .container {
+      max-width: 1200px;
+      width: 100vw; /* No superar ancho viewport */
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box; /* Para que padding no aumente ancho */
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    section.sobre-mi {
+      background: linear-gradient(to right, #f0f8ff, #e6f0ff);
+    }
+
+    section.documentos {
+      background: linear-gradient(to right, #e9fce9, #ddf5dd);
+    }
+
+    section.documentos:hover {
+      background-color: #c0f0c0;
+      cursor: default;
+    }
+
+    section h2 {
+      text-align: center;
+    }
+
+    /* Imagen IH03 responsiva */
+    .tech-image {
+      max-width: 100vw; /* No superar ancho viewport */
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-sizing: border-box;
+    }
+
+
+
+    
+/* Estilo base común para todas las imágenes tech */
+.tech-image, .tech-image-fuchsia {
+  max-width: 100vw;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+/* Efecto Turquesa (original) */
+.tech-image {
+  box-shadow: 0 4px 12px rgba(0,255,255,0.4);
+  animation: parpadeo-turquesa 2s infinite;
+}
+
+/* Efecto Fucsia (nuevo) */
+.tech-image-fuchsia {
+  box-shadow: 0 4px 12px rgba(255,0,127,0.4);
+  animation: parpadeo-fucsia 2s infinite;
+}
+
+/* Animaciones de parpadeo */
+@keyframes parpadeo-turquesa {
+  0%, 100% { box-shadow: 0 0 10px rgba(0,255,255,0.3); }
+  50% { box-shadow: 0 0 25px rgba(0,255,255,0.9); }
+}
+
+@keyframes parpadeo-fucsia {
+  0%, 100% { box-shadow: 0 0 10px rgba(255,0,127,0.3); }
+  50% { box-shadow: 0 0 25px rgba(255,0,127,0.9); }
+}
+
+
+    
+
+
+
+
+
+
+    
+    /* Video responsivo */
+    video {
+      max-width: 100vw; /* No superar ancho viewport */
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      display: block;
+      margin: 20px auto;
+      box-sizing: border-box;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.6em;
+      color: #555;
+    }
+
+    a {
+      color: #0044cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .firma-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+     @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+
+    p {
+      max-width: 900px;
+      margin: 0 auto 2rem auto;
+      text-align: center;
+      line-height: 1.5;
+    }
+  </style>
+
+
+  <style>
+.titulo-neon{
+
+    font-size: clamp(0.8rem, 1.6vw, 1.3rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+
+text-shadow:
+    0 0 5px #0066ff,
+    0 0 10px #0066ff,
+    0 0 20px #0066ff,
+    0 0 40px #0066ff,
+    0 0 80px rgba(0,102,255,0.7);
+  
+  animation:
+        flicker 2.5s infinite alternate,
+        pulse 3s infinite;
+}
+
+
+    
+.titulo-violeta.neon{
+
+    font-size: clamp(0.9rem, 2vw, 1.6rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+
+text-shadow:
+    0 0 5px #0066ff,
+    0 0 10px #0066ff,
+    0 0 20px #0066ff,
+    0 0 40px #0066ff,
+    0 0 80px rgba(0,102,255,0.7);
+
+  animation:
+        flicker 2.5s infinite alternate,
+        pulse 3s infinite;
+}
+
+
+                     
+.titulo-verde.hacker{
+
+    font-size: clamp(0.9rem, 2vw, 1.6rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+
+text-shadow:
+  0 0 5px #00ff66
+  0 0 10px rgba(0,255,102,0.7);
+
+ animation:
+        flicker 2.5s infinite alternate,
+        pulse 3s infinite;
+}
+
+
+
+  
+
+.titulo-rojo.neon{
+
+    font-size: clamp(0.9rem, 2vw, 1.6rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+
+text-shadow:
+  0 0 5px #ff0033,
+  0 0 10px rgba(255,0,51,0.7);
+
+    animation:
+        flicker 2.5s infinite alternate,
+        pulse 3s infinite;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    
+.titulo-amarillo.neon{
+font-size: clamp(0.8rem, 1.6vw, 1.3rem);
+font-weight: 900;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: #ffff00;
+
+/* Efecto de borde negro + Resplandor Neón */
+text-shadow: 
+    /* Contorno / Borde negro nítido en las 4 direcciones */
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,  
+    -1px  1px 0 #000,  
+     1px  1px 0 #000,
+    /* Borde negro más grueso opcional (descomenta si necesitas más grosor) */
+    /* -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, */
+    
+    /* Tus resplandores originales de neón */
+    0 0 5px #ffff00,  
+    0 0 10px #ffff00, 
+    0 0 20px #ffcc00, 
+    0 0 40px #ff9900; 
+
+animation:
+    flicker 2.5s infinite alternate,
+    pulse 3s infinite;
+
+
+}
+
+
+
+
+
+
+    
+
+.titulo-cyan.cásico{
+
+    font-size: clamp(0.9rem, 2vw, 1.6rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+
+text-shadow:
+#00ffff
+rgba(0,255,255,0.7)
+  
+ animation:
+        flicker 2.5s infinite alternate,
+        pulse 3s infinite;
+}
+
+
+  
+
+
+  
+
+   
+
+@keyframes flicker{
+
+    0%,18%,22%,25%,53%,57%,100%{
+        opacity:1;
+    }
+
+    20%,24%,55%{
+        opacity:0.35;
+    }
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+        filter:hue-rotate(0deg);
+    }
+
+    50%{
+        transform:scale(1.05);
+        filter:hue-rotate(30deg);
+    }
+
+    100%{
+        transform:scale(1);
+        filter:hue-rotate(0deg);
+    }
+}
+
+ </style>
+
+
+ 
+ <title>Ing. Gabriel Frávega | IHA - Inteligencia Humana Aplicada</title>
+  
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="bingbot" content="index, follow">
+  
+  <!-- DESCRIPCIÓN -->
+  <meta name="description" content="Sitio oficial del Ing. Gabriel Frávega. Desarrollo de IHA (Inteligencia Humana Aplicada) y el Teorema de la Frontera del Conocimiento (TFC®) para sistemas críticos.">
+  
+  <!-- KEYWORDS -->
+  <meta name="keywords" content="Ing. Gabriel Fravega, Gabriel Fravega, IHA, IHA Inteligencia Humana Aplicada, Inteligencia Humana Aplicada, TFC, Teorema de la Frontera del Conocimiento, ETMBS, kernel hibrido, sistemas criticos, Córdoba Argentina"> 
+  
+  <meta name="author" content="Ing. Gabriel Frávega">
+
+  <!-- CANONICAL -->
+  <link rel="canonical" href="https://ing-gabriel-fravega.github.io/IHA/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ing. Gabriel Frávega | IHA - Inteligencia Humana Aplicada">
+  <meta property="og:description" content="Sitio oficial del Ing. Gabriel Frávega y su desarrollo IHA (Inteligencia Humana Aplicada).">
+  <meta property="og:url" content="https://ing-gabriel-fravega.github.io/IHA/">
+  <meta property="og:site_name" content="IHA - Ing. Gabriel Frávega">
+
+  <!-- DATOS ESTRUCTURADOS (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ing. Gabriel Frávega - IHA",
+    "alternateName": ["IHA", "IHA®", "Inteligencia Humana Aplicada", "Ingeniero Gabriel Frávega", "Gabriel Frávega"],
+    "url": "https://ing-gabriel-fravega.github.io/IHA/",
+    "description": "Sitio oficial de IHA y el Ing. Gabriel Frávega.",
+    "publisher": {
+      "@type": "Person",
+      "name": "Gabriel Frávega",
+      "jobTitle": "Ingeniero"
+    }
+  }
+</script>
+
+
+
+    
+</head>
+<body>
+  <header>
 
